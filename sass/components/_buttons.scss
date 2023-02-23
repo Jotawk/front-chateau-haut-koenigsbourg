@@ -1,0 +1,20 @@
+$base-color: #017272f2;
+
+button {
+  @include button-size(1.6rem 4rem, 1.8rem, 1.5rem, none);
+  cursor: pointer;
+  background: $base-color;
+  transition: background 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: white;
+  margin-top: 1.75rem;
+
+  &:hover {
+    background: #019191f2;
+    transition: 2s ease-out;
+  }
+
+  &:focus {
+    background: $base-color;
+    outline-style: solid;
+  }
+}

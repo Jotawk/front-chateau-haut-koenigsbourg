@@ -1,0 +1,79 @@
+/* Form section */
+
+#contact {
+  padding-top: 6.5rem;
+}
+
+.layout,
+.contact-layout {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23131c27' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #121c27 0%, #182435 70%);
+  color: white;
+  min-height: 95vh;
+}
+
+.contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  border-radius: 20px;
+  width: 60%;
+  padding: 3rem;
+}
+
+.form-head {
+  text-align: center;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 33%;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+  outline: 0.1rem solid #085f6e;
+  background-color: rgba(4, 173, 173, 0.493);
+  padding: 0.1rem;
+  border-radius: 0.25rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+
+.message-form > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-form > textarea {
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.form-wrapper button {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+}

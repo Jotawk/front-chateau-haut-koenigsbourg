@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 1.6rem 4rem;
+  font-size: 1.8rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background: #017272f2;
+  transition: background 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: white;
+  margin-top: 1.75rem;
+}
+button:hover {
+  background: #019191f2;
+  transition: 2s ease-out;
+}
+button:focus {
+  background: #017272f2;
+  outline-style: solid;
+}
+
+/* Skipnav */
+a.skip-main {
+  z-index: -1;
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+}
+a.skip-main :focus,
+a.skip-main :active {
+  left: auto;
+  top: auto;
+  width: 20%;
+  height: auto;
+  overflow: auto;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #085f6e;
+  border: 0.1rem solid #085f6e;
+  text-align: center;
+  font-size: 1.5rem;
+  z-index: 4;
+}
+
+/* Nav Section With HERO */
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Rosarivo", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.main-head {
+  position: sticky;
+  top: 0;
+  background: #131c27;
+  color: white;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-family: "Rosarivo", Helvetica, sans-serif;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url("../img/chateau-haut-koenigsbourg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero .subline {
+  padding: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(34, 33, 33, 0.836);
+}
+
+/* Locations SECTION */
+#locations {
+  min-height: 100vh;
+  color: white;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23131c27' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #131c27 0%, #192435 70%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+#locations .locations-head {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#locations .locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+#locations .locations-head h3 {
+  padding: 2rem 0rem;
+  background: linear-gradient(#fff, #c6cbd1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: white;
+}
+#locations .location-layout,
+#locations .locations-head h3 {
+  background: #131c27;
+  -webkit-text-fill-color: white;
+  padding-top: 2rem;
+}
+
+/* Cards section */
+.content {
+  background: url("http://www.route-chateaux-alsace.com/wp-content/uploads/2014/12/chateau-haut-koenigsbourg.jpg");
+}
+
+.cards {
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 5rem;
+  display: flex;
+  color: white;
+  background: linear-gradient(to bottom, #008b8bb3 5%, #192435 98%);
+}
+.cards .cards-content {
+  margin-right: 2rem;
+}
+.cards img {
+  height: 7.5rem;
+}
+
+/* Footer section */
+footer {
+  color: white;
+  background: #131c27;
+  align-items: center;
+}
+footer h5 {
+  flex: 1 1 30rem;
+  font-size: 1.9rem;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 3.5rem;
+  margin: auto;
+  width: 80%;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.fab:hover {
+  color: #019488;
+}
+
+/* Form section */
+#contact {
+  padding-top: 6.5rem;
+}
+
+.layout,
+.contact-layout {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23131c27' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #121c27 0%, #182435 70%);
+  color: white;
+  min-height: 95vh;
+}
+
+.contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  border-radius: 20px;
+  width: 60%;
+  padding: 3rem;
+}
+
+.form-head {
+  text-align: center;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 33%;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+  outline: 0.1rem solid #085f6e;
+  background-color: rgba(4, 173, 173, 0.493);
+  padding: 0.1rem;
+  border-radius: 0.25rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+
+.message-form > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-form > textarea {
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.form-wrapper button {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

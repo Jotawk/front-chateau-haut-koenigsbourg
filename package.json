@@ -1,0 +1,24 @@
+{
+  "name": "haut-koenigsbourg-project-beta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yatsuo/Haut-Koenigsbourg-Project.git"
+  },
+  "keywords": [
+    "Haut-Koenigsbourg",
+    "Chateau",
+    "Castle"
+  ],
+  "author": "Jonathan Tawk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yatsuo/Haut-Koenigsbourg-Project/issues"
+  },
+  "homepage": "https://github.com/Yatsuo/Haut-Koenigsbourg-Project#readme"
+}

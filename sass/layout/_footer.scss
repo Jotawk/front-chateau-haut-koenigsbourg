@@ -1,0 +1,32 @@
+/* Footer section */
+
+footer {
+  color: white;
+  background: rgb(19, 28, 39);
+  align-items: center;
+
+  h5 {
+    flex: 1 1 30rem;
+    font-size: 1.9rem;
+  }
+
+  ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 3.5rem;
+  margin: auto;
+  width: 80%;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.fab:hover {
+  color: rgb(1, 148, 136);
+}

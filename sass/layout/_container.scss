@@ -1,0 +1,67 @@
+/* Locations SECTION */
+
+#locations {
+  min-height: 100vh;
+  color: white;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23131c27' fill-opacity='0.54' fill-rule='evenodd'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #131c27 0%, #192435 70%);
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .locations-head {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+      padding: 1rem 0rem;
+      text-decoration: underline;
+    }
+
+    h3 {
+      padding: 2rem 0rem;
+      background: linear-gradient(#fff, #c6cbd1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: white;
+    }
+  }
+
+  .location-layout,
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 1);
+    -webkit-text-fill-color: white;
+    padding-top: 2rem;
+  }
+}
+
+/* Cards section */
+
+.content {
+  background: url("http://www.route-chateaux-alsace.com/wp-content/uploads/2014/12/chateau-haut-koenigsbourg.jpg");
+}
+
+.cards {
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100vh;
+  padding: 5rem;
+  display: flex;
+  color: white;
+  background: linear-gradient(to bottom, #008b8bb3 5%, #192435 98%);
+
+  .cards-content {
+    margin-right: 2rem;
+  }
+
+  img {
+    height: 7.5rem;
+  }
+}

@@ -1,0 +1,67 @@
+/* Media Query */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  nav {
+    text-align: center;
+  }
+  .hero {
+    min-height: 90vh;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+
+  .cards {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards,
+  img {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}

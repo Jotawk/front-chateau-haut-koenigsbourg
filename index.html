@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="sr" lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Château du Haut-Koenigsbourg</title>
+    <meta
+      name="description"
+      content="Le château du Haut-Koenigsbourg au cœur du tourisme en Alsace. Retrouvez son histoire, visites, événements, informations pratiques (horaires, tarifs, navette…)"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="./img/castle.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rosarivo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+  </head>
+  <body>
+
+    <a href="#chateau" class="skip-main">Aller au contenu principal</a>
+    <header class="main-head">
+      <nav>
+      <h1 id="logo"><a href="#top">Chateau du Haut-Koenigsbourg</h1></a>
+        <ul>
+          <li><a href="#chateau">Le château</li></a>
+          <li><a href="#infos">Infos pratiques</li></a>
+          <li><a href="#contact">Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section class="hero">
+      <h2 class="headline">Le château</h2>
+      <h3 class="subline">
+        Remontez dans le temps du Moyen-Age.<br />Partez à la découverte de ces
+        lieux exceptionnels…
+      </h3>
+      <button class="btn">Réservez maintenant</button>
+    </section>
+
+    <main id="chateau">
+      <section id="locations">
+        <header class="locations-head">
+          <h2 class="location-content">
+            Plongez dans l'univers du Moyen Âge.
+          </h2>
+          <h3 class="location-content">
+            Lors des visites au château du Haut-Koenigsbourg, vous visiterez
+            bien plus qu'un monument...
+          </h3>
+          <p class="location-content location-layout">
+            Dominant la plaine d'Alsace à 757 mètres d'altitude, le château fort
+            du Haut-Koenigsbourg a tous les atouts d'une forteresse : une
+            position stratégique relativement facile à défendre autrefois et
+            aujourd'hui un panorama exceptionnel sur plaine d'Alsace, les
+            Vosges, la Forêt-Noire et parfois même les Alpes. Mais il faut
+            franchir son pont-levis, pour découvrir ses habitations complètement
+            aménagées et meublées, ses collections d'armes du Moyen Âge, pour
+            monter en haut de son donjon et du grand bastion.
+          </p>
+        </header>
+      </section>
+
+      <section class="content" id="infos">
+        <div class="cards">
+          <div class="card">
+            <img src="./icons/chateau.svg" alt="Accès au château" />
+            <h4>Accès au château :</h4>
+            <p class="cards-content">
+              Le château du Haut-Koenigsbourg est situé à 26 km au nord de
+              Colmar, 55 km au sud de Strasbourg et 12 km à l'ouest de Sélestat.
+              Autoroute A35 sortie 17 via Kintzheim.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./icons/localisation.svg" alt="Localisation du château" />
+            <h4>Adresse :</h4>
+            <p class="cards-content">
+              Château du Haut-Koenigsbourg 67600 Orschwiller, Alsace,France
+              Téléphone : +33 (0)3 69 33 25 00 Fax : + 33 (0)3 69 33 25 01.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./icons/taverne.svg" alt="Restaurant" />
+            <h4>La taverne du Haut-Koenigsbourg :</h4>
+            <p class="cards-content">
+              Un espace de restauration est installé au bastion en étoile, à
+              l'entrée du château. Avec près d'une centaine de places, la
+              Taverne du Haut-Kœnigsbourg vous propose d'y déguster de la
+              cuisine alsacienne ou médiéval.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout" id="contact">
+        <section class="contact-layout">
+          <div class="form-wrapper">
+            <header class="form-head">
+              <h2>Contactez nous</h2>
+            </header>
+            <form action="https://formspree.io/mjvyblbz" method="POST">
+              <div class="name-form">
+                <label for="name">Nom :</label>
+                <input id="name" type="text" name="name" required />
+              </div>
+              <div class="email-form">
+                <label for="email">Email :</label>
+                <input id="email" type="email" name="_replyto" required />
+              </div>
+              <div class="message-form">
+                <label for="message">Votre message : </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="70"
+                  rows="15"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" value="Send">Envoyer</button>
+
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <h5>Chateau du Haut-Koenigsbourg &copy;</h5>
+        <ul class="footer-icons">
+          <a
+            href="https://twitter.com"
+            title="Twitter-social-media"
+            target="_blank"
+            ><i class="fab fa-twitter fa-3x" aria-hidden="true"> </i>
+          </a>
+          <a
+            href="https://youtube.com"
+            title="Youtube-social-media"
+            target="_blank"
+          >
+            <i class="fab fa-youtube fa-3x" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            title="Instagram-social-media"
+            target="_blank"
+          >
+            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i
+          ></a>
+        </ul>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
